@@ -68,3 +68,37 @@ add_two = lambda my_input: my_input + 2
 
 #checking if my_sting is part of 
 is_substring = lambda my_string: my_string in "This is the master s
+
+print(is_substring('I'))
+print(is_substring('am'))
+print(is_substring('the'))
+print(is_substring('master'))
+
+# logic operation in lambda function
+check_if_A_grade = lambda grade: 'Got an A!' if grade >= 90 else 'Did not get an A...'
+
+print(check_if_A_grade(91))
+print(check_if_A_grade(70))
+print(check_if_A_grade(20))
+
+#another string check function
+contains_a = lambda my_string: "a" in my_string
+print(contains_a("banana"))
+print(contains_a("apple"))
+print(contains_a("cherry"))
+
+#lambda function to check string ending on certain character
+#at the moment if ends on a
+ends_in_a = lambda my_string: my_string[-1] == "a"
+
+print(ends_in_a("data"))
+print(ends_in_a("aardvark"))
+
+#lambda function with if else
+even_or_odd = lambda num: "even" if num % 2 == 0 else "odd"
+
+#lambda function that doubles value of num squared
+double_square = lambda num: (num ** 2)*2
+
+#lambda function with addup random int between x and y to the input number
+add_random = lambda num: num+ random.randint(1,10)
