@@ -1,5 +1,6 @@
 ########################
 # List comprehensions  #
+# examples             #
 ########################
 temperatures = [-5, 29, 26, -7, 1, 18, 12, 31]
 temperatures_new = [temp for temp in temperatures]
@@ -52,3 +53,18 @@ capitals = ["Santiago", "Paris", "Copenhagen"]
 countries = ["Chile", "France", "Denmark"]
 joined = zip(capitals, countries)
 locations = [item1+", "+item2 for (item1,item2) in joined ]
+
+
+##############################
+#                            #
+# Lambda functions examples  #
+#                            #
+##############################
+
+
+#adds +2 to the my_input variable
+add_two = lambda my_input: my_input + 2
+
+
+#checking if my_sting is part of 
+is_substring = lambda my_string: my_string in "This is the master s
